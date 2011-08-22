@@ -13,6 +13,19 @@ set ai
 " turn off compatibility with the old vi
 set nocompatible
 
+" Make mouse middle click paste without formatting it.
+map <MouseMiddle> <Esc>"*p
+
+" Better modes.  Remeber where we are, support yankring
+set viminfo=!,'100,\"100,:20,<50,s10,h,n~/.viminfo
+
+" Move Backup Files to ~/.vim/sessions
+set backupdir=~/.vim/sessions
+set dir=~/.vim/sessions
+
+" Turn off annoying swapfiles
+set noswapfile
+
 " turn on the "visual bell" - which is much quieter than the "audio blink"
 set vb
 
