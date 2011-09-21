@@ -13,12 +13,16 @@
 [submodule "bundle/project"]
 	path = bundle/project
 	url = https://rojoca@github.com/rojoca/proj-vim.git
+	ignore = dirty
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+	ignore = dirty
 [submodule "bundle/phpunit"]
 	path = bundle/phpunit
 	url = git://github.com/vim-scripts/phpunit.git
+	ignore = dirty
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
+	ignore = dirty
