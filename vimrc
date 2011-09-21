@@ -48,7 +48,13 @@ set guioptions-=T
 " turn-off scrollbar
 set guioptions-=L
 
+" add line numbers
+set nu
+
 :colorscheme desert
+
+" set line number color
+highlight LineNr guifg=#666666
 
 autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
 
