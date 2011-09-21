@@ -45,6 +45,9 @@ set backspace=indent,eol,start
 " turn-off toolbar
 set guioptions-=T
 
+" turn-off scrollbar
+set guioptions-=L
+
 :colorscheme desert
 
 autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
