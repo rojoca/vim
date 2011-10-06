@@ -51,6 +51,9 @@ set guioptions-=L
 " add line numbers
 set nu
 
+" don't wrap lines
+set nowrap
+
 :colorscheme desert
 
 " set line number color

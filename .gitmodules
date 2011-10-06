@@ -26,3 +26,7 @@
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
 	ignore = dirty
+[submodule "bundle/buffergator"]
+	path = bundle/buffergator
+	url = git://github.com/vim-scripts/Buffergator.git
+	ignore = dirty
