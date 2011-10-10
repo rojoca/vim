@@ -30,3 +30,9 @@
 	path = bundle/buffergator
 	url = git://github.com/vim-scripts/Buffergator.git
 	ignore = dirty
+[submodule "bundle/SuperTab"]
+	path = bundle/SuperTab
+	url = https://github.com/vim-scripts/SuperTab.git
+[submodule "bundle/FuzzyFinder"]
+	path = bundle/FuzzyFinder
+	url = https://github.com/vim-scripts/FuzzyFinder.git
