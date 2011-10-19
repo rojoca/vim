@@ -54,10 +54,31 @@ set nu
 " don't wrap lines
 set nowrap
 
+" login to shell
+set shell=bash\ --login
+
+" map [jj] to Esc and Write in insert mode
+inoremap jj <Esc>:w<CR>
+
+" Create Blank Newlines and stay in Normal mode
+nnoremap <silent> zj o<Esc>
+nnoremap <silent> zk O<Esc>
+
 :colorscheme desert
 
 " set line number color
 highlight LineNr guifg=#666666
+
+" highlight things that we find with the search
+set hlsearch
+
+"{{{Taglist configuration
+let Tlist_Use_Right_Window = 1
+let Tlist_Enable_Fold_Column = 0
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Use_SingleClick = 1
+let Tlist_Inc_Winwidth = 0
+"}}}
 
 autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
 
