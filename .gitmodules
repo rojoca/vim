@@ -33,9 +33,6 @@
 [submodule "bundle/SuperTab"]
 	path = bundle/SuperTab
 	url = https://github.com/vim-scripts/SuperTab.git
-[submodule "bundle/FuzzyFinder"]
-	path = bundle/FuzzyFinder
-	url = https://github.com/vim-scripts/FuzzyFinder.git
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
