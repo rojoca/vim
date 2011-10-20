@@ -64,6 +64,10 @@ inoremap jj <Esc>:w<CR>
 nnoremap <silent> zj o<Esc>
 nnoremap <silent> zk O<Esc>
 
+" Swap ; and :  Convenient.
+nnoremap ; :
+nnoremap : ;
+
 :colorscheme desert
 
 " set line number color
