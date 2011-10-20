@@ -33,6 +33,7 @@
 [submodule "bundle/SuperTab"]
 	path = bundle/SuperTab
 	url = https://github.com/vim-scripts/SuperTab.git
+	ignore = dirty
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
