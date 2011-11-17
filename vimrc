@@ -2,6 +2,8 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 " set our tabs to four spaces
+set smartindent
+set sw=4
 set ts=4
 
 " turn syntax highlighting on by default
@@ -47,6 +49,7 @@ set guioptions-=T
 
 " turn-off scrollbar
 set guioptions-=L
+set guioptions-=r
 
 " add line numbers
 set nu
@@ -57,8 +60,12 @@ set nowrap
 " login to shell
 set shell=bash\ --login
 
+" allow tab completion of buffers
+set wildchar=<Tab> wildmenu wildmode=full
+
 " map [jj] to Esc and Write in insert mode
 inoremap jj <Esc>:w<CR>
+inoremap ;; <End>;<Esc>:w<CR>
 
 " Create Blank Newlines and stay in Normal mode
 nnoremap <silent> zj o<Esc>
@@ -84,6 +91,18 @@ let Tlist_Use_SingleClick = 1
 let Tlist_Inc_Winwidth = 0
 "}}}
 
+"map <F8> :!vimctags -f ./tags -h ".php.tao" -R --exclude="\.svn" --totals=yes --tag-relative=yes --PHP-kinds=+cf --regex-PHP="/abstract class ([^ ]*)/\1/c/" --regex-PHP="/interface ([^ ]*)/\1/c/" --regex-PHP="/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/"
+
 autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
 
 autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
+
+" abbreviations
+ab dcm /**<CR> * @param <CR>* @return void<CR>*/<Esc><Up><Up>$i
+ab pubm /**<CR> * @param <CR>* @return void<CR>*/<CR><Backspace>public function()<CR>{<CR><CR>}<Esc>kkk%hi
+ab privar /**<CR> * @var <CR>*/<CR>private $
+ab provar /**<CR> * @var <CR>*/<CR>protected $
+ab pubvar /**<CR> * @var <CR>*/<CR>public $
+
+" expand tabs to spaces
+set expandtab
