@@ -71,6 +71,9 @@ inoremap ;; <End>;<Esc>:w<CR>
 nnoremap <silent> zj o<Esc>
 nnoremap <silent> zk O<Esc>
 
+" Show the full path of the current file
+noremap ff :echo expand('%:p')<CR>
+
 " Swap ; and :  Convenient.
 nnoremap ; :
 nnoremap : ;
