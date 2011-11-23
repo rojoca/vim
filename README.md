@@ -43,4 +43,4 @@ Once installed you can use the following to create a tags file relative to the d
 
 Which will create a file called tags in the current directory. You can get vim to use this tags file with:
 
-    $ :set tags=/path/to/tags
+    :set tags=/path/to/tags
