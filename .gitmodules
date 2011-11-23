@@ -10,10 +10,6 @@
 	path = bundle/closetag
 	url = git://github.com/docunext/closetag.vim.git
 	ignore = dirty
-[submodule "bundle/project"]
-	path = bundle/project
-	url = https://rojoca@github.com/rojoca/proj-vim.git
-	ignore = dirty
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
