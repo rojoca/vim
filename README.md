@@ -35,7 +35,7 @@ If you're on a mac you will need to install ctags with macports as the version t
 
     $ sudo port install ctags
 
-This will install in /t
+This will install in /opt/local/bin/ctags
 
 Once installed you can use the following to create a tags file relative to the directory in which you run the command.
 
