@@ -37,7 +37,7 @@ If you're on a mac you will need to install ctags with macports as the version t
 
 This will install in /opt/local/bin/ctags
 
-Once installed you can use the following to create a tags file relative to the directory in which you run the command.
+Once installed you can use the following to create a php tags file relative to the directory in which you run the command.
 
     $ /opt/local/bin/ctags -f ./tags -h ".php" -R --exclude="\.svn" --totals=yes --tag-relative=yes --PHP-kinds=+cf --regex-PHP="/abstract class ([^ ]*)/\1/c/" --regex-PHP="/interface ([^ ]*)/\1/c/" --regex-PHP="/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/"
 
