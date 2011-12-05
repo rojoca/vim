@@ -74,6 +74,9 @@ nnoremap <silent> zk O<Esc>
 " Show the full path of the current file
 noremap ff :echo expand('%:p')<CR>
 
+" Show the full path of the current file and add it to a yank register
+noremap cp :let @" = expand("%:p")<CR>
+
 " Swap ; and :  Convenient.
 nnoremap ; :
 nnoremap : ;
