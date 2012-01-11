@@ -34,6 +34,9 @@ set vb
 " do not highlight words when searching for them. it's distracting.
 set nohlsearch
 
+" highlight search terms incrementally
+set incsearch
+
 " automatically show matching brackets. works like it does in bbedit.
 set showmatch
 
@@ -77,14 +80,23 @@ noremap ff :echo expand('%:p')<CR>
 " Show the full path of the current file and add it to a yank register
 noremap cp :let @" = expand("%:p")<CR>
 
+" Make window movement easier
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+noremap <C-h> <C-w>h
+
 " Swap ; and :  Convenient.
 nnoremap ; :
 nnoremap : ;
 
-:colorscheme desert
+colorscheme slate
 
 " set line number color
 highlight LineNr guifg=#666666
+highlight ColorColumn ctermbg=darkgrey guibg=#2f2f2f
+set colorcolumn=86
+set ruler
 
 " highlight things that we find with the search
 set hlsearch
@@ -92,9 +104,12 @@ set hlsearch
 "{{{Taglist configuration
 let Tlist_Use_Right_Window = 1
 let Tlist_Enable_Fold_Column = 0
+let Tlist_Highlight_Tag_On_BufEnter = 0
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_SingleClick = 1
+let Tlist_Show_One_File = 1
 let Tlist_Inc_Winwidth = 0
+let Tlist_Ctags_Cmd = "vimctags"
 "}}}
 
 "map <F8> :!vimctags -f ./tags -h ".php.tao" -R --exclude="\.svn" --totals=yes --tag-relative=yes --PHP-kinds=+cf --regex-PHP="/abstract class ([^ ]*)/\1/c/" --regex-PHP="/interface ([^ ]*)/\1/c/" --regex-PHP="/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/"
