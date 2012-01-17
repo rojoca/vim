@@ -36,3 +36,6 @@
 [submodule "bundle/VimDebugger"]
 	path = bundle/VimDebugger
 	url = https://github.com/taxilian/VimDebugger.git
+[submodule "bundle/vst"]
+	path = bundle/vst
+	url = https://github.com/vim-scripts/VST.git
