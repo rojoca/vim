@@ -90,6 +90,8 @@ noremap <C-h> <C-w>h
 nnoremap ; :
 nnoremap : ;
 
+" noremap dos :e ++ff=dos<CR>:w<CR>
+
 colorscheme slate
 
 " set line number color
