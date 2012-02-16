@@ -120,6 +120,8 @@ autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=
 
 autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
 
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
 " abbreviations
 ab dcm /**<CR> * @param <CR>* @return void<CR>*/<Esc><Up><Up>$i
 ab pubm /**<CR> * @param <CR>* @return void<CR>*/<CR><Backspace>public function()<CR>{<CR><CR>}<Esc>kkk%hi
