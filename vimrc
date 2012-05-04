@@ -97,7 +97,7 @@ noremap _ :ls<CR>:b
 
 " noremap dos :e ++ff=dos<CR>:w<CR>
 
-colorscheme slate
+colorscheme desert
 
 " set line number color
 highlight LineNr guifg=#666666

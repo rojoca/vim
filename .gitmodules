@@ -48,3 +48,6 @@
 [submodule "bundle/vim-twig"]
 	path = bundle/vim-twig
 	url = git://github.com/lunaru/vim-twig.git
+[submodule "bundle/grep"]
+	path = bundle/grep
+	url = git://github.com/vim-scripts/grep.vim.git
