@@ -138,5 +138,7 @@ ab privar /**<CR> * @var <CR>*/<CR>private $
 ab provar /**<CR> * @var <CR>*/<CR>protected $
 ab pubvar /**<CR> * @var <CR>*/<CR>public $
 
+let g:dwm_map_keys=0
+
 " expand tabs to spaces
 set expandtab
