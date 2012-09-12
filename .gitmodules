@@ -59,3 +59,6 @@
 [submodule "bundle/racket"]
 	path = bundle/racket
 	url = git://github.com/wlangstroth/vim-racket.git
+[submodule "bundle/symfony"]
+	path = bundle/symfony
+	url = git://github.com/docteurklein/vim-symfony.git
