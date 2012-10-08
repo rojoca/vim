@@ -21,7 +21,7 @@ Finally, set up symlinks so vim can pick up the config:
 
     $ cd ~/
     $ ln -s ~/vim ~/.vim
-    $ ln -s ~/vim/vimrc .vim
+    $ ln -s ~/vim/vimrc .vimrc
 
 Now when you open vim you should be good to go.
 
