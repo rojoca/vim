@@ -29,7 +29,7 @@ Now when you open vim you should be good to go.
 
 You may want to use tags to aid with completion. If you're on linux you'll want to install exuberent ctags:
 
-    $ sudo apt-get install exuberent-ctags
+    $ sudo apt-get install exuberant-ctags
 
 If you're on a mac you will need to install ctags with macports as the version that ships with mac is not compatible:
 
