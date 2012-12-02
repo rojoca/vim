@@ -102,7 +102,7 @@ colorscheme molokai
 " set line number color
 highlight LineNr guifg=#666666
 highlight ColorColumn ctermbg=darkgrey guibg=#2f2f2f
-set colorcolumn=86
+set colorcolumn=72
 set ruler
 
 " highlight things that we find with the search

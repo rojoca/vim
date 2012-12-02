@@ -62,3 +62,6 @@
 [submodule "bundle/symfony"]
 	path = bundle/symfony
 	url = git://github.com/docteurklein/vim-symfony.git
+[submodule "bundle/zencoding"]
+	path = bundle/zencoding
+	url = git://github.com/mattn/zencoding-vim.git
