@@ -131,6 +131,8 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 au BufNewFile,BufRead *.tao set filetype=php
 au BufNewFile,BufRead *.twig set filetype=html
 
+filetype indent plugin on
+
 " abbreviations
 ab dcm /**<CR> * @param <CR>* @return void<CR>*/<Esc><Up><Up>$i
 ab pubm /**<CR> * @param <CR>* @return void<CR>*/<CR><Backspace>public function()<CR>{<CR><CR>}<Esc>kkk%hi
