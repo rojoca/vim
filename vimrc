@@ -1,6 +1,10 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+if &term == "xterm"
+    set t_Co=256
+endif
+
 " set our tabs to four spaces
 set smartindent
 set sw=4

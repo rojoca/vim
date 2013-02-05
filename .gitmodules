@@ -68,3 +68,12 @@
 [submodule "bundle/git-vim"]
 	path = bundle/git-vim
 	url = git://github.com/motemen/git-vim.git
+[submodule "bundle/foreplay"]
+	path = bundle/foreplay
+	url = git://github.com/tpope/vim-foreplay.git
+[submodule "bundle/classpath"]
+	path = bundle/classpath
+	url = git://github.com/tpope/vim-classpath.git
+[submodule "bundle/clojure-static"]
+	path = bundle/clojure-static
+	url = git://github.com/guns/vim-clojure-static.git
