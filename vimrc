@@ -1,7 +1,7 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-if &term == "xterm"
+if &term == "xterm" || &term == "xterm-256color"
     set t_Co=256
 endif
 
@@ -98,6 +98,10 @@ nnoremap ; :
 nnoremap : ;
 
 noremap _ :ls<CR>:b
+noremap rp :PromptVimTmuxCommand
+noremap rl :RunLastVimTmuxCommand
+noremap ri :InspectVimTmuxCommand
+noremap rx :CloseVimTmuxCommand
 
 " noremap dos :e ++ff=dos<CR>:w<CR>
 
@@ -105,7 +109,7 @@ colorscheme molokai
 
 " set line number color
 highlight LineNr guifg=#666666
-highlight ColorColumn ctermbg=darkgrey guibg=#2f2f2f
+highlight ColorColumn ctermbg=black  guibg=#1f1f1f
 set colorcolumn=72
 set ruler
 
@@ -148,3 +152,5 @@ let g:dwm_map_keys=0
 
 " expand tabs to spaces
 set expandtab
+
+let NERDTreeIgnore = ['\.pyc$']
